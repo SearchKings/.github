@@ -1,0 +1,48 @@
+name: ✍️ PPC Website Update
+description: Update website content for a specific client
+title: "content(skc123): [Short Description]"
+labels: ["ppc-update"]
+body:
+  - type: input
+    id: skcid
+    attributes:
+      label: SKC ID
+      description: The SearchKings Customer ID (e.g., skc1002035584)
+      placeholder: "skc123"
+    validations:
+      required: true
+  - type: input
+    id: branch_name
+    attributes:
+      label: Repo Branch Name
+      description: The base branch for this update (e.g., us/john-doe)
+      placeholder: "us/john-doe"
+    validations:
+      required: true
+  - type: input
+    id: task_url
+    attributes:
+      label: Task URL (Optional)
+      description: Link to the related task, e.g., Ease, Slack, etc.
+  - type: checkboxes
+    id: update_type
+    attributes:
+      label: Type of Update
+      options:
+        - label: New Subdomain
+        - label: Content Swap
+        - label: Promo Update
+        - label: Multi-Vertical Split
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Provide a detailed description and links to any assets (images, videos, etc.)
+      placeholder: "Please describe the update requirements here..."
+    validations:
+      required: true
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: Additional Notes
+      description: Any extra context for the developer/agents.
