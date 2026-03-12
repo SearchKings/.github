@@ -15,7 +15,7 @@ body:
     id: branch_name
     attributes:
       label: Repo Branch Name
-      description: The base branch for this update (e.g., us/john-doe)
+      description: The new branch for this customer that branches off from the `master` branch (e.g., us/john-doe)
       placeholder: us/john-doe
     validations:
       required: true
