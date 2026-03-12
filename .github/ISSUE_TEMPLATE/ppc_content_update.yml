@@ -1,5 +1,5 @@
 name: ✍️ PPC Website Update
-description: Update website content for a specific client
+description: Update website content or add new subdomains for an existing client
 title: 'content(skc123): [Short Description]'
 body:
   - type: input
