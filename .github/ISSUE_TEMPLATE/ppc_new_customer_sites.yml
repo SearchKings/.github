@@ -1,6 +1,6 @@
-name: ✍️ PPC Website Update
-description: Update website content for a specific client
-title: 'content(skc123): [Short Description]'
+name: 🌐 PPC New Customer Sites
+description: Request creation of new customer sites/subdomains
+title: 'new-sites(skc123): [Short Description]'
 body:
   - type: input
     id: skcid
@@ -25,22 +25,17 @@ body:
     attributes:
       label: Task URL (Optional)
       description: Link to the related task, e.g., Ease, Slack, etc.
-  - type: checkboxes
-    id: update_type
-    attributes:
-      label: Type of Update
-      options:
-        - label: New Subdomain
-        - label: Content Swap
-        - label: Promo Update
-        - label: Multi-Vertical Split
 
   - type: textarea
-    id: details
+    id: new_sites
     attributes:
-      label: Details
-      description: Provide a detailed description and links to any assets (images, videos, etc.)
-      placeholder: Please describe the update requirements here...
+      label: New Sites
+      description: Add one row per site. `Subdomain` and `Location` are required; `Sublocation` is optional.
+      placeholder: |
+        | Subdomain | Location | Sublocation |
+        |-----------|----------|-------------|
+        | example   | Calgary  | NW          |
+        | example2  | Toronto  |             |
     validations:
       required: true
 
